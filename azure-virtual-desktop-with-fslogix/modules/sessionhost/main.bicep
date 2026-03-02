@@ -84,10 +84,10 @@ resource vms 'Microsoft.Compute/virtualMachines@2024-03-01' = [for i in range(0,
       computerName: '${virtualMachine.name}${i + 1}'
       adminUsername: adminUsername
       adminPassword: adminPassword
-      windowsConfiguration: {
-        provisionVMAgent: true
-        enableAutomaticUpdates: true
-      }
+      // windowsConfiguration: {
+      //   provisionVMAgent: true
+      //   enableAutomaticUpdates: true
+      // }
     }
     diagnosticsProfile: {
       bootDiagnostics: {

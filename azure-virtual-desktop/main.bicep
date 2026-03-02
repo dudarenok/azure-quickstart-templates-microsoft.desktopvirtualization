@@ -186,10 +186,10 @@ resource vm 'Microsoft.Compute/virtualMachines@2024-03-01' = {
       computerName: virtualMachine.name
       adminUsername: adminUsername
       adminPassword: adminPassword
-      windowsConfiguration: {
-        provisionVMAgent: true
-        enableAutomaticUpdates: true
-      }
+      // windowsConfiguration: {
+      //   provisionVMAgent: true
+      //   enableAutomaticUpdates: true
+      // }
     }
     diagnosticsProfile: {
       bootDiagnostics: {
