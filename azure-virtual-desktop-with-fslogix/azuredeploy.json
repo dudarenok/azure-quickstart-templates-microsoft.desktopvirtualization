@@ -1241,7 +1241,11 @@
                         "osProfile": {
                           "computerName": "[format('{0}{1}', parameters('virtualMachine').name, add(range(0, parameters('numberOfSessionHost'))[copyIndex()], 1))]",
                           "adminUsername": "[parameters('adminUsername')]",
-                          "adminPassword": "[parameters('adminPassword')]"
+                          "adminPassword": "[parameters('adminPassword')]",
+                          "windowsConfiguration": {
+                            "provisionVMAgent": true,
+                            "enableAutomaticUpdates": true
+                          }
                         },
                         "diagnosticsProfile": {
                           "bootDiagnostics": {

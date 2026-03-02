@@ -268,7 +268,11 @@
         "osProfile": {
           "computerName": "[parameters('virtualMachine').name]",
           "adminUsername": "[parameters('adminUsername')]",
-          "adminPassword": "[parameters('adminPassword')]"
+          "adminPassword": "[parameters('adminPassword')]",
+          "windowsConfiguration": {
+            "provisionVMAgent": true,
+            "enableAutomaticUpdates": true
+          }
         },
         "diagnosticsProfile": {
           "bootDiagnostics": {
