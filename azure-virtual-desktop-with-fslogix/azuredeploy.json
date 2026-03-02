@@ -1268,7 +1268,10 @@
                         "type": "AADLoginForWindows",
                         "typeHandlerVersion": "1.0",
                         "autoUpgradeMinorVersion": true,
-                        "enableAutomaticUpgrade": false
+                        "enableAutomaticUpgrade": false,
+                        "settings": {
+                          "mdmId": ""
+                        }
                       },
                       "dependsOn": [
                         "[format('vms[{0}]', range(0, parameters('numberOfSessionHost'))[copyIndex()])]"
