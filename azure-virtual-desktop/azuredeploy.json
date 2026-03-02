@@ -111,7 +111,7 @@
         "relayUDP": "Default",
         "startVMOnConnect": false,
         "registrationInfo": {
-          "expirationTime": "[dateTimeAdd('2024-09-20 00:00:00Z', 'P2D')]",
+          "": "[dateTimeAdd('2026-03-20 00:00:00Z', 'P2D')]",
           "registrationTokenOperation": "Update"
         }
       },
